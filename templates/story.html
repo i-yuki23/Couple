@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    STORY
+{% endblock %}
+
+{% block main %}
+      {# {% if img_url %}
+        <p><img src="{{ img_url }}"></p>
+      {% endif %} #}
+      <h1>♡Memories♡</h1>
+      <br><br>
+      {% for result in results %}
+
+      <p><img src="static/uploads/{{ result.image }}" class="image"></p>
+
+      <tr>
+          <td>{{result.text_content}}</td>
+          <p></p>
+          <td>{{result.timestamp}}</td>
+      </tr>
+      <p></p>
+      <hr>
+      {% endfor %}
+{% endblock %}

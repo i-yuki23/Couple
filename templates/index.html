@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+<head><link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel="stylesheet"></head>
+
+<body>
+    {%if date%}
+    <h1>Together for {{date}}</h1>
+    {%endif%}
+
+    <br>
+
+    <div class="circle">{%if result_boy %}<img src="static/uploads/{{ result_boy[-1].image }}" class="round">{% endif %}</div>
+
+    ♡
+
+    <div class="circle">{%if result_girl %}<img src="static/uploads/{{ result_girl[-1].image }}" class="round">{% endif %}</div>
+
+</body>
+<footer>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label>
+            <input type="file" name="boy" id="boy" accept="image/*" class="display">🚹
+        </label>
+
+        <label>
+            <input type="file" name="girl" id="girl" accept="image/*" class="display">🚺
+        </label>
+
+
+        <button class="btn btn-light" type="submit">登録</button>
+
+
+    </form>
+</footer>
+
+{% endblock %}

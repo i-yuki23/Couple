@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Post
+{% endblock %}
+
+{% block main %}
+<head><link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel="stylesheet"></head>
+
+    <br><br><br>
+
+    <h3>２人の思い出を投稿しましょう！</h3>
+
+
+    <br>
+
+    <form action="/post" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="text" name="text" placeholder="コメントをかいてね！" type="text" size="60" class="tarea">
+        </div>
+        <p>
+            <input type="file" name="img_file" id="img_file" accept="image/*">
+        </p>
+        <button class="btn btn-light" type="submit">投稿！</button>
+    </form>
+{% endblock %}

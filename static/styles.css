@@ -1,0 +1,73 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+
+
+.image {
+    width: 500px;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: #dcdcdc;
+}
+
+input.display {
+    display:none;
+}
+
+label {
+    padding: 10px 10px;
+    color: #ffffff;
+    /* background-color: #384878; */
+    cursor: pointer;
+    margin-left: 0;
+}
+
+button.right {
+    text-align: right;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.circle{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align:center;
+    line-height: 80px;
+    border-radius: 50%;
+    border: solid 3px white;
+  }
+
+.round {
+    border-radius: 50%;
+    width:  200px;
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
