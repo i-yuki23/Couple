@@ -39,9 +39,9 @@ db.execute("CREATE TABLE IF NOT EXISTS pictures (user_id NUMERIC NOT NULL, image
 db.execute("CREATE TABLE IF NOT EXISTS dates (user_id NUMERIC NOT NULL, date DATETAME NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id))")
 
 
-# Make sure API key is set
-if not os.environ.get("API_KEY"):
-    raise RuntimeError("API_KEY not set")
+# # Make sure API key is set
+# if not os.environ.get("API_KEY"):
+#     raise RuntimeError("API_KEY not set")
 
 
 @app.after_request
@@ -264,3 +264,6 @@ def password():
 
     else:
         return render_template("password.html")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
