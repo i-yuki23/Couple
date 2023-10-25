@@ -11,7 +11,7 @@ jobs:
           command: pip install -r requirements.txt  # 依存関係のインストール
       - run:
           name: Run tests
-          command: python -m unittest discover -s test_app  # テストの実行
+          command: python -m unittest discover -s test  # テストの実行
 
 workflows:
   version: 2
