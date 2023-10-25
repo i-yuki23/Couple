@@ -29,6 +29,7 @@ def test_register(client):
     response = client.post('/register', data={'username': 'test', 'password': 'test', 'confirmation': 'test'})
     assert response.status_code == 200  # adjust according to your application's behavior
 
+
 def test_login(client):
     """Test logging in."""
     response = client.post('/login', data={'username': 'test', 'password': 'test'})
