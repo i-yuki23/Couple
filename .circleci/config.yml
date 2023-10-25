@@ -32,11 +32,11 @@ jobs:
 
       - run:
           name: push docker image
-          command: heroku container: push web -a $HEROKU_APP_NAME
+          command: heroku container:push web -a $HEROKU_APP_NAME
       
       - run:
           name: release docker image
-          command: heroku container: release web -a $HEROKU_APP_NAME
+          command: heroku container:release web -a $HEROKU_APP_NAME
 
 
 workflows:
