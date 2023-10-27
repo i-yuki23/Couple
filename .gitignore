@@ -1,3 +1,4 @@
 static/uploads/*
+!static/uploads/.gitkeep
 __pycache__
 flask_session/
