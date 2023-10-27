@@ -1,7 +1,7 @@
 # COUPLE 
 
 COUPLE is a unique web application designed exclusively for couples, providing a platform to cherish and share their memories together. Users can post pictures with comments and track how many days they have been together since the start of their relationship.
-### [Web Link](https://couple-python-yito-175107b78229.herokuapp.com/login)
+### [Check out COUPLE!!](https://couple-python-yito-175107b78229.herokuapp.com/login)
 
 ## Table of Contents
 
