@@ -9,7 +9,6 @@ COUPLE is a unique web application designed exclusively for couples, providing a
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Technologies](#technologies)
-- [License](#license)
 
 ## Demo
 
@@ -50,9 +49,7 @@ For a detailed description of each file, refer to the project's documentation.
 - **Frontend**: HTML, CSS, JavaScript
 - **Database**: SQLite
 
-## License
 
-This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
